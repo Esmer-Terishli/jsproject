@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="do-list">
+        <div class="yellow"></div>
+        <h1>To-Do-List</h1>
+
+        <div class="list">
+            <button class="sort-list"><i class="fa-solid fa-arrow-down-short-wide"></i></button>
+        </div>
+
+        <div class="tasks">
+            <div class="newtask">
+                <form>
+                    <div class="add-task-input">
+                        <button class="wrapper-delete" type="submit">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </button>
+                        <input type="text" class="wrapper-input" required>
+                    </div>
+
+
+                </form>
+            </div>
+            <span class="error"></span>
+        </div>
+
+        <div class="todo-container">
+            <ul class="todo-list">
+                <!-- <li class="list-li">
+                    <button class="wrapper-delete" type="submit">
+                    </button> 
+                </li> -->
+            </ul>
+        </div>
+
+
+        <div class="add">
+            <button class="add-new">
+                <!-- <button class="plus">+</button> -->
+                ADD
+            </button>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.do-list{
+    width: 500px;
+    height: 100%;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    margin: 100px auto;
+    padding-bottom: 20px;
+}
+.yellow{
+    width: 500px;
+    height: 40px;
+    background-color: #FFDC40;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.do-list h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+.list{
+    width: 400px;
+    height: 30px;
+    margin: auto;
+    margin-top: 20px;
+}
+.sort-list{
+    float: right;
+    color: #C4C4C4;
+    border: none;
+    background-color: white;
+}
+.sort-list i:hover{
+    color: black;
+    cursor: pointer;
+    transition: .4s;
+}
+
+form{
+    min-height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input{
+    padding: 20px;
+    width: 400px;
+    height: 30px;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid #C4C4C4;
+}
+.form button{
+    border: none;
+}
+
+.add{
+    min-height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.add-new{
+    background-color: #833AE0;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    width: 220px;
+    height: 40px;
+}
+.add-new:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #833AE0;
+    border: 1px solid #833AE0;
+    transition: .8s;
+}
+
+.todo-container{
+    position: relative;
+}
+
+.add-task-input{
+    height: 100%;
+    position: relative;
+}
+
+.wrapper-delete{
+    position: absolute;
+    right: 2%;
+    top: 30%;
+    border: none;
+}
+.todo-container{
+    position: relative;
+}
+.todo-container i:hover{
+    color: #833AE0;
+    cursor: pointer;
+}
+.add-task-input button{
+    border: none;
+}
+.add-task-input i{
+    color: black;
+}
+.add-task-input i:hover{
+    color: #833AE0;
+    cursor: pointer;
+}
+.todo-container{
+    padding: 20px;
+    width: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 1px solid #C4C4C4;
+}
+.todo-list li{
+    line-height: 25px;
+    list-style: none;
+    padding: 0 20px;
+}
+
+
