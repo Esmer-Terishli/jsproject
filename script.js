@@ -64,12 +64,17 @@ sortlist.addEventListener('click', function (a) {
         
         list[i].innerHTML = `${tosort[i]}   <button class="wrapper-delete" type="submit"><i class="fa-solid fa-circle-xmark tt"></i></button>`;
 
-        let btn = document.querySelector(".tt");
-    
-        btn.addEventListener('click', function (c) {
-            c.parentElement.target.remove();
-    
+        list[i].addEventListener('click', function (c) {
+            c.target.remove();
         })
+
+
+        // let btn = document.querySelector(".tt");
+    
+        // btn.addEventListener('click', function (c) {
+        //     c.parentElement.target.remove();
+    
+        // })
     
     }
 
