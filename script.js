@@ -3,7 +3,6 @@ addnew.addEventListener('click', function (event) {
     let newlist = document.createElement('li');
     newlist.className ='list-li'
     newlist.style.position="relative"
-    // let newbutton = document.querySelector('.wrapper-delete');
     let button = document.createElement('i');
     button.className = 'fa-solid fa-circle-xmark delname';
     // button.className='delname';
@@ -19,7 +18,7 @@ addnew.addEventListener('click', function (event) {
 
     let wrapperinput = document.querySelector(".wrapper-input");
 
-
+    
     if (wrapperinput.value == "") {
         alert("error");
     }
@@ -36,7 +35,6 @@ addnew.addEventListener('click', function (event) {
 
         wrapperinput.value = "";
     }
-    // let remove = document.querySelector(".delname");
 })
 
 
@@ -64,17 +62,9 @@ sortlist.addEventListener('click', function (a) {
         
         list[i].innerHTML = `${tosort[i]}   <button class="wrapper-delete" type="submit"><i class="fa-solid fa-circle-xmark tt"></i></button>`;
 
-        list[i].addEventListener('click', function (c) {
-            c.target.remove();
+        list[i].children[0].addEventListener('click', function (c) {
+            c.target.parentElement.parentElement.remove();
         })
-
-
-        // let btn = document.querySelector(".tt");
-    
-        // btn.addEventListener('click', function (c) {
-        //     c.parentElement.target.remove();
-    
-        // })
     
     }
 
